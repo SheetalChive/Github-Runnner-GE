@@ -3,6 +3,8 @@ name: CICD-for-GE
 on:
   push: 
     branches: [main]
+    paths: 
+      - '**.html'
 
 jobs:
   code:
