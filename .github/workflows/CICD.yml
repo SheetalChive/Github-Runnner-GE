@@ -1,27 +1,30 @@
+
 name: CICD-for-GE
+
 on:
   workflow_dispatch:
+
 jobs:
   code:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
-        run: echo "checkout code"
+      - name: Checkout code
+        run: echo "Checkout code"
+
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Build Docker container
-        run: echo "build the container"
+        run: echo "Build the container"
+
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: test the container
-        run: "testing the container" 
-      
+      - name: Test the container
+        run: echo "Testing the container"
+
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: deploy the app
-        run: echo "deply the app " 
-  
-      
+      - name: Deploy the app
+        run: echo "Deploy the app"
